@@ -1,0 +1,116 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  /* height: 100vh; */
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+/*  */
+.continer {
+  width: 80%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  color: aliceblue;
+  /* height: 100vh; */
+}
+.r1-1 {
+  grid-column: span 2;
+  background-color: hsl(263, 55%, 52%);
+}
+.r1-2 {
+  grid-column: span 1;
+  background-color: hsl(217, 19%, 35%);
+}
+.r1-3 {
+  grid-column: span 1;
+  grid-row: span 2;
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+}
+.r1-4 {
+  grid-column: span 1;
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+}
+.r1-5 {
+  grid-column: span 2;
+  background-color: hsl(219, 29%, 14%);
+}
+/*  */
+.continer .all {
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px 0px #b1b0b0;
+}
+.continer .all .info {
+  display: flex;
+  align-items: center;
+}
+.continer .all p {
+  margin-top: 20px;
+}
+.continer .all p:nth-child(2) {
+  font-size: 22px;
+  font-weight: 600;
+}
+.continer .all p:nth-child(3) {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 70%;
+}
+/* imgs */
+
+.all .info .img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  /* background-color: brown; */
+}
+.all .info .text {
+  margin-left: 30px;
+}
+.r1-1 .info .img {
+  background-image: url(images/image-daniel.jpg);
+  background-size: cover;
+}
+.r1-2 .info .img {
+  background-image: url(images/image-jonathan.jpg);
+  background-size: cover;
+}
+.r1-3 .info .img {
+  background-image: url(images/image-kira.jpg);
+  background-size: cover;
+}
+.r1-4 .info .img {
+  background-image: url(images/image-jeanette.jpg);
+  background-size: cover;
+}
+.r1-5 .info .img {
+  background-image: url(images/image-patrick.jpg);
+  background-size: cover;
+}
+/* @media (max-height: 1150px) {
+  .continer {
+    width: 98%;
+  }
+} */
+@media (max-width: 1150px) {
+  .continer {
+    margin: 100px auto;
+    display: block;
+  }
+  .continer .all {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .continer {
+    width: 98%;
+  }
+}
