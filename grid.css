@@ -21,6 +21,14 @@ body {
 .r1-1 {
   grid-column: span 2;
   background-color: hsl(263, 55%, 52%);
+  position: relative;
+}
+.r1-1 img {
+  position: absolute;
+  background-color: hsl(263, 55%, 52%);
+  top: 0;
+  right: 100px;
+  opacity: 50%;
 }
 .r1-2 {
   grid-column: span 1;
